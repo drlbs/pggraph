@@ -8,11 +8,17 @@
 *  Dr. Andrew J. Pounds  
 *  Department of Chemistry 
 *  Mercer University 
+*  Spring 1999
 *
 *  pounds_aj@mercer.edu
 *
 *  This routine takes on input real arrays x and y containing pts
-*  points and graphs them on and x-y coordinate system.
+*  points and graphs them on and x-y coordinate system using the
+*  pgplot graphics library from CalTech
+*
+*  http://www.astro.caltech.edu/~tjp/pgplot/
+*
+*  The subrouting arguments are as follows
 *
 *  xpt - 1D array of node points x-values
 *  ypt - 1D array of node pointx y-values
@@ -33,7 +39,7 @@
 *
 *  Compilation directions on Cobra:
 *
-*    gfortran program.f /usr/local/pgplot/libpgplot.a /usr/X11R6/lib/libX11.a
+*  gfortran  program.f -L /pub/pounds/pgplot -lpgplot -lpng -lX11 
 *
 ****************************************************************************
 
