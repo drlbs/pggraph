@@ -14,6 +14,23 @@
 *  This routine takes on input real arrays x and y containing pts
 *  points and graphs them on and x-y coordinate system.
 *
+*  xpt - 1D array of node points x-values
+*  ypt - 1D array of node pointx y-values
+*  npt - the number of node points
+*  x   - 1D array of fit or interpolated x-values
+*  y   - 1D array of fit or interpolated y-values 
+*  pts - Number of fit or interpolated values
+*
+*  Include this file after the final end statement in your fortran
+*  program.   In your code, assuming that you have filled the 
+*  appropriate arrays, you may plot the results with.
+*
+*  call graph( xpt, ypt, npt, x, y, pts )
+*
+*  where the arguments to the subroutine are the appropriate names
+*  from your own code.
+* 
+*
 *  Compilation directions on Cobra:
 *
 *    gfortran program.f /usr/local/pgplot/libpgplot.a /usr/X11R6/lib/libX11.a
